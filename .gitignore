@@ -1,0 +1,25 @@
+# Dependencies and build output
+node_modules/
+out/
+dist/
+
+# Local data — never commit a restaurant's database or backups
+*.db
+*.db.tmp
+backups/
+
+# Environment and logs
+.env
+.env.*
+*.log
+
+# Editor / tool settings that are specific to one machine
+.claude/settings.local.json
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Old local debugging scripts (not part of the app)
+electron-diag.js
+electron-test.js
