@@ -1,0 +1,23 @@
+const registerCategoryHandlers = require('./categories')
+const registerMenuItemHandlers = require('./menuItems')
+const registerOrderHandlers = require('./orders')
+const registerCustomerHandlers = require('./customers')
+const registerReservationHandlers = require('./reservations')
+const registerDashboardHandlers = require('./dashboard')
+const registerSettingsHandlers = require('./settings')
+const registerPrintHandlers = require('./print')
+const registerExportHandlers = require('./export')
+const registerWhatsAppHandlers = require('./whatsapp')
+
+module.exports = function registerAllIpc() {
+  registerCategoryHandlers()
+  registerMenuItemHandlers()
+  registerOrderHandlers()
+  registerCustomerHandlers()
+  registerReservationHandlers()
+  registerDashboardHandlers()
+  registerSettingsHandlers()
+  registerPrintHandlers()
+  registerExportHandlers()
+  registerWhatsAppHandlers()
+}
